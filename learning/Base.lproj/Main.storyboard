@@ -173,18 +173,72 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saad" translatesAutoresizingMaskIntoConstraints="NO" id="jny-hK-kwF">
                                 <rect key="frame" x="0.0" y="201" width="393" height="390"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-He-RY3">
+                                <rect key="frame" x="19" y="642" width="354" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae5-H6-qaY">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Saad"/>
+                                        <connections>
+                                            <action selector="buttonsaad:" destination="tMi-sn-dwq" eventType="touchUpInside" id="eaP-vK-mUd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruf-Qc-hA3">
+                                        <rect key="frame" x="93" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Aditya"/>
+                                        <connections>
+                                            <action selector="buttonaditiya:" destination="tMi-sn-dwq" eventType="touchUpInside" id="uoH-Jk-W7j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0H-P1-TSN">
+                                        <rect key="frame" x="186" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Chint"/>
+                                        <connections>
+                                            <action selector="buttonchint:" destination="tMi-sn-dwq" eventType="touchUpInside" id="kFL-zp-K8z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-bx-UIC">
+                                        <rect key="frame" x="279" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Matin"/>
+                                        <connections>
+                                            <action selector="buttonmatin:" destination="tMi-sn-dwq" eventType="touchUpInside" id="yGQ-bg-p1d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEv-PN-yUW">
+                                <rect key="frame" x="134" y="724" width="125" height="35"/>
+                                <size key="titleShadowOffset" width="20" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Default"/>
+                                <connections>
+                                    <action selector="buttonDefault:" destination="tMi-sn-dwq" eventType="touchUpInside" id="FC3-3A-YTq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AMJ-Jt-H8x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jny-hK-kwF" firstAttribute="trailing" secondItem="AMJ-Jt-H8x" secondAttribute="trailing" id="4nX-Dt-dP5"/>
+                            <constraint firstItem="tEv-PN-yUW" firstAttribute="top" secondItem="Ysi-He-RY3" secondAttribute="bottom" constant="47.670000000000002" id="7iP-Dd-Qi9"/>
+                            <constraint firstItem="tEv-PN-yUW" firstAttribute="leading" secondItem="AMJ-Jt-H8x" secondAttribute="leading" constant="134" id="9FO-bf-utp"/>
+                            <constraint firstItem="AMJ-Jt-H8x" firstAttribute="trailing" secondItem="tEv-PN-yUW" secondAttribute="trailing" constant="134" id="A8s-h6-ITN"/>
                             <constraint firstItem="jny-hK-kwF" firstAttribute="top" secondItem="AMJ-Jt-H8x" secondAttribute="top" constant="142" id="JsH-1Q-7Rt"/>
                             <constraint firstItem="jny-hK-kwF" firstAttribute="leading" secondItem="AMJ-Jt-H8x" secondAttribute="leading" id="PaC-6v-SKp"/>
+                            <constraint firstItem="AMJ-Jt-H8x" firstAttribute="bottom" secondItem="Ysi-He-RY3" secondAttribute="bottom" constant="141.66999999999999" id="V77-h3-cG7"/>
                             <constraint firstItem="AMJ-Jt-H8x" firstAttribute="bottom" secondItem="jny-hK-kwF" secondAttribute="bottom" constant="227" id="Xhn-2v-ivl"/>
+                            <constraint firstItem="Ysi-He-RY3" firstAttribute="top" secondItem="jny-hK-kwF" secondAttribute="bottom" constant="51" id="kFx-Te-2ww"/>
+                            <constraint firstItem="AMJ-Jt-H8x" firstAttribute="bottom" secondItem="tEv-PN-yUW" secondAttribute="bottom" constant="59" id="sKD-b6-vgp"/>
+                            <constraint firstItem="AMJ-Jt-H8x" firstAttribute="trailing" secondItem="Ysi-He-RY3" secondAttribute="trailing" constant="20" id="tun-zc-K5q"/>
+                            <constraint firstItem="Ysi-He-RY3" firstAttribute="leading" secondItem="AMJ-Jt-H8x" secondAttribute="leading" constant="19" id="zeR-s4-W78"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageview" destination="jny-hK-kwF" id="WDv-fm-ugS"/>
+                        <outlet property="imageview" destination="jny-hK-kwF" id="oRw-8j-nTa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkd-cO-fz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
