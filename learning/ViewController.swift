@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     
     var detials = [
         way(num: 1, name: "UiSegment") ,
-        way(num: 2, name: "UiSwitch")
+        way(num: 2, name: "UiSwitch") ,
+        way(num: 3, name: "Uiimageview")
     ]
     
     @IBOutlet weak var tableview: UITableView!
@@ -42,11 +43,31 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
         var cnt =  detials[indexPath.row]
         var Uiswitch = storyboard?.instantiateViewController(withIdentifier: "UiswitchViewController") as! UiswitchViewController
         var UiSegment = storyboard?.instantiateViewController(withIdentifier: "UiSegementViewController") as! UiSegementViewController
-        if cnt.name == "UiSegment"{
+        var Uiimageview = storyboard?.instantiateViewController(withIdentifier: "UiimageViewController") as! UiimageViewController
+        
+
+        
+        switch cnt.name
+        {
+        case "UiSegment" :
             navigationController?.pushViewController(UiSegment, animated: true)
-        }
-        else if (cnt.name == "UiSwitch"){
+        case "UiSwitch" :
             navigationController?.pushViewController(Uiswitch, animated: true)
+        case "Uiimageview" :
+            navigationController?.pushViewController(Uiimageview, animated: true)
+        default:
+            print("hello")
         }
+//        switch cnt.name
+//        {
+//        case "Uiswitch" :
+//            //        case "UiSegment" :
+//            navigationController?.pushViewController(UiSegment, animated: true)
+//        case "" :
+//            navigationController?.pushViewController(UiSegment, animated: true)
+//        default:
+//            print("wrong input")
+//
+//        }
     }
 }

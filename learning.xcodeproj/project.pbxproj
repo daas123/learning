@@ -19,6 +19,7 @@
 		924A5FF12A68FFCC0026FD07 /* learningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A5FF02A68FFCC0026FD07 /* learningUITests.swift */; };
 		924A5FF32A68FFCC0026FD07 /* learningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A5FF22A68FFCC0026FD07 /* learningUITestsLaunchTests.swift */; };
 		924A60002A69008D0026FD07 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A5FFF2A69008D0026FD07 /* TableViewCell.swift */; };
+		92989AB52A694EA800A250E8 /* UiimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92989AB42A694EA800A250E8 /* UiimageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		924A5FF02A68FFCC0026FD07 /* learningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITests.swift; sourceTree = "<group>"; };
 		924A5FF22A68FFCC0026FD07 /* learningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		924A5FFF2A69008D0026FD07 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		92989AB42A694EA800A250E8 /* UiimageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				920C2E7B2A6919CD0007B1BC /* UiswitchViewController.swift */,
 				920C2E792A6919B00007B1BC /* UiSegementViewController.swift */,
 				924A5FD32A68FFC90026FD07 /* ViewController.swift */,
+				92989AB42A694EA800A250E8 /* UiimageViewController.swift */,
 				924A5FD52A68FFC90026FD07 /* Main.storyboard */,
 				924A5FFF2A69008D0026FD07 /* TableViewCell.swift */,
 				924A5FD82A68FFCC0026FD07 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 			files = (
 				924A5FD42A68FFC90026FD07 /* ViewController.swift in Sources */,
 				920C2E7A2A6919B00007B1BC /* UiSegementViewController.swift in Sources */,
+				92989AB52A694EA800A250E8 /* UiimageViewController.swift in Sources */,
 				920C2E7C2A6919CD0007B1BC /* UiswitchViewController.swift in Sources */,
 				924A60002A69008D0026FD07 /* TableViewCell.swift in Sources */,
 				924A5FD02A68FFC90026FD07 /* AppDelegate.swift in Sources */,

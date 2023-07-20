@@ -162,6 +162,35 @@
             </objects>
             <point key="canvasLocation" x="2305" y="-2"/>
         </scene>
+        <!--Uiimage View Controller-->
+        <scene sceneID="Hjv-Eq-jQ2">
+            <objects>
+                <viewController storyboardIdentifier="UiimageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tMi-sn-dwq" customClass="UiimageViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j9D-N0-2bU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saad" translatesAutoresizingMaskIntoConstraints="NO" id="jny-hK-kwF">
+                                <rect key="frame" x="0.0" y="201" width="393" height="390"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AMJ-Jt-H8x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jny-hK-kwF" firstAttribute="trailing" secondItem="AMJ-Jt-H8x" secondAttribute="trailing" id="4nX-Dt-dP5"/>
+                            <constraint firstItem="jny-hK-kwF" firstAttribute="top" secondItem="AMJ-Jt-H8x" secondAttribute="top" constant="142" id="JsH-1Q-7Rt"/>
+                            <constraint firstItem="jny-hK-kwF" firstAttribute="leading" secondItem="AMJ-Jt-H8x" secondAttribute="leading" id="PaC-6v-SKp"/>
+                            <constraint firstItem="AMJ-Jt-H8x" firstAttribute="bottom" secondItem="jny-hK-kwF" secondAttribute="bottom" constant="227" id="Xhn-2v-ivl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="jny-hK-kwF" id="WDv-fm-ugS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkd-cO-fz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3000.7633587786258" y="-2.1126760563380285"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zSb-ss-oZo">
             <objects>
@@ -182,6 +211,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="saad" width="800" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -29,7 +29,7 @@ class UiSegementViewController: UIViewController {
         }
         else if sender.selectedSegmentIndex == 1
         {
-            backgroundview.backgroundColor = .blue
+            backgroundview.backgroundColor = .gray
             layerView.backgroundColor = .red
         }
     }
