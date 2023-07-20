@@ -9,21 +9,25 @@ import UIKit
 
 class UiswitchViewController: UIViewController {
 
+    @IBOutlet weak var refrenceofswitch: UISwitch!
+    @IBOutlet weak var uilabel: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if refrenceofswitch.isOn{
+            uilabel.text = "Button Is ONN"
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func switchbutton(_ sender: UISwitch) {
+        if refrenceofswitch.isOn{
+            uilabel.text = "Button Is ONN"
+        }else{
+            uilabel.text = "Button Is OFF"
+        }
     }
-    */
+    
+    
 
 }

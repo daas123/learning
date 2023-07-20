@@ -130,9 +130,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thirdviewcontroller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAu-G3-SSB">
-                                <rect key="frame" x="125.66666666666667" y="415.66666666666669" width="141.66666666666663" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-1f-DPs">
+                                <rect key="frame" x="172" y="410.66666666666669" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchbutton:" destination="SIz-Nq-CWc" eventType="valueChanged" id="B3q-Ch-kNc"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-ly-kQ4">
+                                <rect key="frame" x="10" y="225" width="373" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -140,10 +146,17 @@
                         <viewLayoutGuide key="safeArea" id="EUj-jy-eds"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lAu-G3-SSB" firstAttribute="centerY" secondItem="jGD-7e-trv" secondAttribute="centerY" id="9pU-sT-9wY"/>
-                            <constraint firstItem="lAu-G3-SSB" firstAttribute="centerX" secondItem="jGD-7e-trv" secondAttribute="centerX" id="Nr2-Qw-Jxl"/>
+                            <constraint firstItem="WdT-1f-DPs" firstAttribute="centerX" secondItem="jGD-7e-trv" secondAttribute="centerX" id="6Tt-c2-reL"/>
+                            <constraint firstItem="EUj-jy-eds" firstAttribute="trailing" secondItem="L5A-ly-kQ4" secondAttribute="trailing" constant="10" id="8kc-fq-Rjg"/>
+                            <constraint firstItem="L5A-ly-kQ4" firstAttribute="top" secondItem="EUj-jy-eds" secondAttribute="top" constant="166" id="Dj7-rM-Ae1"/>
+                            <constraint firstItem="L5A-ly-kQ4" firstAttribute="leading" secondItem="EUj-jy-eds" secondAttribute="leading" constant="10" id="de8-BQ-LCO"/>
+                            <constraint firstItem="WdT-1f-DPs" firstAttribute="centerY" secondItem="jGD-7e-trv" secondAttribute="centerY" id="hrQ-A9-LUR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="refrenceofswitch" destination="WdT-1f-DPs" id="xzu-ht-n2b"/>
+                        <outlet property="uilabel" destination="L5A-ly-kQ4" id="7Wl-HI-6CJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPa-8q-tEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

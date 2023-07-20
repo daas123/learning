@@ -17,12 +17,14 @@ class UiSegementViewController: UIViewController {
     @IBOutlet weak var layerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundview.backgroundColor = .gray
+        layerView.backgroundColor = .green
     }
     
     @IBAction func segment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0
         {
-            backgroundview.backgroundColor = .black
+            backgroundview.backgroundColor = .gray
             layerView.backgroundColor = .green
         }
         else if sender.selectedSegmentIndex == 1
