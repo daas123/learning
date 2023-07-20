@@ -40,8 +40,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var cnt =  detials[indexPath.row]
-        var UiSegment = storyboard?.instantiateViewController(withIdentifier: "SecViewController") as! SecViewController
-        var Uiswitch = storyboard?.instantiateViewController(withIdentifier: "thirdViewController") as! thirdViewController
+        var Uiswitch = storyboard?.instantiateViewController(withIdentifier: "UiswitchViewController") as! UiswitchViewController
+        var UiSegment = storyboard?.instantiateViewController(withIdentifier: "UiSegementViewController") as! UiSegementViewController
         if cnt.name == "UiSegment"{
             navigationController?.pushViewController(UiSegment, animated: true)
         }

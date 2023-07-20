@@ -34,7 +34,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QK0-VJ-yxU">
-                                                    <rect key="frame" x="63.333333333333371" y="11.666666666666666" width="309.66666666666663" height="20.333333333333336"/>
+                                                    <rect key="frame" x="63.333333333333343" y="11.666666666666666" width="309.66666666666663" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -78,37 +78,54 @@
             </objects>
             <point key="canvasLocation" x="944.27480916030527" y="-2.1126760563380285"/>
         </scene>
-        <!--Sec View Controller-->
+        <!--Ui Segement View Controller-->
         <scene sceneID="cSI-ws-yMI">
             <objects>
-                <viewController storyboardIdentifier="SecViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pLW-GN-UnQ" customClass="SecViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UiSegementViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pLW-GN-UnQ" customClass="UiSegementViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aZs-LT-2p0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sec view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hND-cv-mIS">
-                                <rect key="frame" x="125.33333333333333" y="415.66666666666669" width="142.66666666666669" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5hu-uM-Zvh">
+                                <rect key="frame" x="131" y="75" width="131" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="pLW-GN-UnQ" eventType="valueChanged" id="Sbp-hj-1eK"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7f-U9-dzr">
+                                <rect key="frame" x="16" y="128" width="361" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eGr-zd-Eln"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hND-cv-mIS" firstAttribute="centerX" secondItem="aZs-LT-2p0" secondAttribute="centerX" id="4CU-rL-5Bj"/>
-                            <constraint firstItem="hND-cv-mIS" firstAttribute="centerY" secondItem="aZs-LT-2p0" secondAttribute="centerY" id="Hd1-ss-vlG"/>
+                            <constraint firstItem="t7f-U9-dzr" firstAttribute="leading" secondItem="eGr-zd-Eln" secondAttribute="leading" constant="16" id="Jko-Em-XBT"/>
+                            <constraint firstItem="t7f-U9-dzr" firstAttribute="top" secondItem="5hu-uM-Zvh" secondAttribute="bottom" constant="22" id="Mbj-oQ-UM7"/>
+                            <constraint firstItem="t7f-U9-dzr" firstAttribute="bottom" secondItem="eGr-zd-Eln" secondAttribute="bottom" id="P8d-P0-FZj"/>
+                            <constraint firstItem="5hu-uM-Zvh" firstAttribute="top" secondItem="eGr-zd-Eln" secondAttribute="top" constant="16" id="XOy-BN-F4A"/>
+                            <constraint firstItem="5hu-uM-Zvh" firstAttribute="centerX" secondItem="aZs-LT-2p0" secondAttribute="centerX" id="cBq-Zl-lWa"/>
+                            <constraint firstItem="eGr-zd-Eln" firstAttribute="trailing" secondItem="t7f-U9-dzr" secondAttribute="trailing" constant="16" id="u3c-W3-l5K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundview" destination="aZs-LT-2p0" id="yN3-Gp-47e"/>
+                        <outlet property="layerView" destination="t7f-U9-dzr" id="Ixd-hq-GxL"/>
+                        <outlet property="segment" destination="5hu-uM-Zvh" id="Jqz-Hq-vxy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yra-Tk-RfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-2"/>
+            <point key="canvasLocation" x="1643.5114503816794" y="-2.1126760563380285"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Uiswitch View Controller-->
         <scene sceneID="1re-VR-2Qh">
             <objects>
-                <viewController storyboardIdentifier="thirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SIz-Nq-CWc" customClass="thirdViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UiswitchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SIz-Nq-CWc" customClass="UiswitchViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jGD-7e-trv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
