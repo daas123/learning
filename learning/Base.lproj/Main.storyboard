@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="-2"/>
+            <point key="canvasLocation" x="660" y="-2"/>
         </scene>
         <!--Ui Segement View Controller-->
         <scene sceneID="cSI-ws-yMI">
@@ -432,7 +432,7 @@
                                     <segment title="Wheels"/>
                                 </segments>
                                 <connections>
-                                    <action selector="selection:" destination="iG1-V4-wJK" eventType="valueChanged" id="cit-tV-S9i"/>
+                                    <action selector="selectionview:" destination="iG1-V4-wJK" eventType="valueChanged" id="eRo-d9-62t"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-PL-ifF">
@@ -442,7 +442,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vcF-mP-cKc">
-                                <rect key="frame" x="0.0" y="124.99999999999999" width="393" height="34.333333333333329"/>
+                                <rect key="frame" x="0.0" y="125" width="393" height="34"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tem-IX-x5f"/>
@@ -460,8 +460,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="datelabel" destination="0Xp-PL-ifF" id="ho2-XS-Hsz"/>
-                        <outlet property="datepicker" destination="vcF-mP-cKc" id="9D0-Qv-qwJ"/>
+                        <outlet property="datelabel" destination="0Xp-PL-ifF" id="qGR-ZF-GPL"/>
+                        <outlet property="datepicker" destination="vcF-mP-cKc" id="Otc-vu-V4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqx-aU-e0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
