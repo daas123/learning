@@ -416,6 +416,58 @@
             </objects>
             <point key="canvasLocation" x="3174.8091603053435" y="-2.1126760563380285"/>
         </scene>
+        <!--Datepicker View Controller-->
+        <scene sceneID="Cxj-JQ-a5Y">
+            <objects>
+                <viewController storyboardIdentifier="DatepickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iG1-V4-wJK" customClass="DatepickerViewController" customModule="learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="td0-5n-tQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Crc-is-SRR">
+                                <rect key="frame" x="55" y="86" width="283" height="32"/>
+                                <segments>
+                                    <segment title="Compact"/>
+                                    <segment title="Inline"/>
+                                    <segment title="Wheels"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selection:" destination="iG1-V4-wJK" eventType="valueChanged" id="cit-tV-S9i"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-PL-ifF">
+                                <rect key="frame" x="50" y="697" width="293" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vcF-mP-cKc">
+                                <rect key="frame" x="0.0" y="124.99999999999999" width="393" height="34.333333333333329"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tem-IX-x5f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Crc-is-SRR" firstAttribute="leading" secondItem="tem-IX-x5f" secondAttribute="leading" constant="55" id="1o4-Ie-FXo"/>
+                            <constraint firstItem="tem-IX-x5f" firstAttribute="trailing" secondItem="0Xp-PL-ifF" secondAttribute="trailing" constant="50" id="Mj8-ow-8Ex"/>
+                            <constraint firstItem="tem-IX-x5f" firstAttribute="bottom" secondItem="0Xp-PL-ifF" secondAttribute="bottom" constant="100" id="Mko-3c-OUE"/>
+                            <constraint firstItem="vcF-mP-cKc" firstAttribute="leading" secondItem="td0-5n-tQJ" secondAttribute="leading" id="VLb-vS-c0v"/>
+                            <constraint firstItem="Crc-is-SRR" firstAttribute="top" secondItem="tem-IX-x5f" secondAttribute="top" constant="27" id="VOV-Fj-qZl"/>
+                            <constraint firstItem="tem-IX-x5f" firstAttribute="trailing" secondItem="Crc-is-SRR" secondAttribute="trailing" constant="55" id="baW-41-7hb"/>
+                            <constraint firstItem="vcF-mP-cKc" firstAttribute="top" secondItem="Crc-is-SRR" secondAttribute="bottom" constant="8" symbolic="YES" id="bul-MF-ky5"/>
+                            <constraint firstItem="0Xp-PL-ifF" firstAttribute="leading" secondItem="tem-IX-x5f" secondAttribute="leading" constant="50" id="gac-5Q-Pz2"/>
+                            <constraint firstAttribute="trailing" secondItem="vcF-mP-cKc" secondAttribute="trailing" id="pWB-4w-K13"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datelabel" destination="0Xp-PL-ifF" id="ho2-XS-Hsz"/>
+                        <outlet property="datepicker" destination="vcF-mP-cKc" id="9D0-Qv-qwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqx-aU-e0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3838.9312977099235" y="-2.1126760563380285"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zSb-ss-oZo">
             <objects>
