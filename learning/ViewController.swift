@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     var detials = [
         way(num: 1, name: "UiSegment") ,
         way(num: 2, name: "UiSwitch") ,
-        way(num: 3, name: "Uiimageview")
+        way(num: 3, name: "Uiimageview"),
+        way(num: 4, name: "UIProgressView")
     ]
     
     @IBOutlet weak var tableview: UITableView!
@@ -44,6 +45,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
         var Uiswitch = storyboard?.instantiateViewController(withIdentifier: "UiswitchViewController") as! UiswitchViewController
         var UiSegment = storyboard?.instantiateViewController(withIdentifier: "UiSegementViewController") as! UiSegementViewController
         var Uiimageview = storyboard?.instantiateViewController(withIdentifier: "UiimageViewController") as! UiimageViewController
+        var UIProgressView = storyboard?.instantiateViewController(withIdentifier: "UIProgressViewController") as! UIProgressViewController
         
 
         
@@ -55,6 +57,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
             navigationController?.pushViewController(Uiswitch, animated: true)
         case "Uiimageview" :
             navigationController?.pushViewController(Uiimageview, animated: true)
+        case "UIProgressView":
+            navigationController?.pushViewController(UIProgressView, animated: true)
         default:
             print("hello")
         }
