@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         way(num: 3, name: "Uiimageview"),
         way(num: 4, name: "UIProgressView"),
         way(num: 5, name: "DatepickerViewController"),
+        way(num: 6, name: "UiScrollview")
+        
     ]
     
     @IBOutlet weak var tableview: UITableView!
@@ -48,7 +50,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
         var Uiimageview = storyboard?.instantiateViewController(withIdentifier: "UiimageViewController") as! UiimageViewController
         var UIProgressView = storyboard?.instantiateViewController(withIdentifier: "UIProgressViewController") as! UIProgressViewController
         var DatepickerViewController = storyboard?.instantiateViewController(withIdentifier: "DatepickerViewController") as! DatepickerViewController
-        
+        var UiScrollview = storyboard?.instantiateViewController(withIdentifier: "UiScrollview") as! UiScrollview
 
         
         switch cnt.name
@@ -63,6 +65,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
             navigationController?.pushViewController(UIProgressView, animated: true)
         case "DatepickerViewController":
             navigationController?.pushViewController(DatepickerViewController, animated: true)
+        case "UiScrollview":
+            navigationController?.pushViewController(UiScrollview, animated: true)
         default:
             print("hello")
         }
