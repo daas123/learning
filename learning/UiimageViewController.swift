@@ -16,8 +16,6 @@ class UiimageViewController: UIViewController {
     @IBOutlet weak var imageview: UIImageView!
     
     
-    let alertcontroller = UIAlertController(title: "Alert", message: "Do Not Touch !!", preferredStyle: .alert)
-    let ok = UIAlertAction(title: "OK", style: .default)
     
     
     override func viewDidLoad() {
@@ -29,6 +27,8 @@ class UiimageViewController: UIViewController {
     }
     @objc func didimagetapped(sender: UIGestureRecognizer){
         
+        let alertcontroller = UIAlertController(title: "Alert", message: "Do Not Touch !!", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default)
         alertcontroller.addAction(ok)
         present(alertcontroller, animated: true)
     }

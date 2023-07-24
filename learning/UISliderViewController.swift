@@ -9,21 +9,26 @@ import UIKit
 
 class UISliderViewController: UIViewController {
 
+    
+    @IBOutlet weak var updatelabel: UILabel!
+    @IBOutlet weak var sliderrefrence: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updatelabel.isHidden = true
+        sliderrefrence.minimumValue = 0
+        sliderrefrence.maximumValue = 10
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func slideracton(_ sender: UISlider) {
+        updatelabel.isHidden = false
+        updatelabel.text = Int(round(sender.value)).description
+        // we can use both round or int to get stiff value
+        //updatelabel.text = Int(sender.value).description
     }
-    */
+    
+    
+    
 
 }
