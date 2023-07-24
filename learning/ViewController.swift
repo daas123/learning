@@ -22,11 +22,11 @@ class ViewController: UIViewController {
         way(num: 6, name: "UiScrollview"),
         way(num: 7, name: "UIPickerView"),
         //
-        way(num: 8, name: "UIStepper"),
-        way(num: 9, name: "UIActivityIndicator"),
-        way(num: 10, name: "UISlider"),
-        way(num: 11, name: "UIPageControl"),
-        way(num: 10, name: "UIWebView"),
+//        way(num: 8, name: "UIStepper"),
+//        way(num: 9, name: "UIActivityIndicator"),
+//        way(num: 10, name: "UISlider"),
+//        way(num: 11, name: "UIPageControl"),
+//        way(num: 10, name: "UIWebView"),
         
     ]
     
@@ -59,11 +59,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
         var DatepickerViewController = storyboard?.instantiateViewController(withIdentifier: "DatepickerViewController") as! DatepickerViewController
         var UiScrollview = storyboard?.instantiateViewController(withIdentifier: "UiScrollview") as! UiScrollview
         var UIPickerView = storyboard?.instantiateViewController(withIdentifier: "UIPickerViewController") as! UIPickerViewController
-        var UIStepper = storyboard?.instantiateViewController(withIdentifier: "UIStepperViewController") as! UIStepperViewController
-        var  UIActivityIndicator = storyboard?.instantiateViewController(withIdentifier: "UIActivityIndicatorViewController") as! UIActivityIndicatorViewController
-        var UISlider = storyboard?.instantiateViewController(withIdentifier: "UISliderViewController") as! UISliderViewController
-        var UIPageControl = storyboard?.instantiateViewController(withIdentifier: "UIPageControlViewController") as! UIPageControlViewController
-        var UIWebView = storyboard?.instantiateViewController(withIdentifier: "UIWebViewController" ) as! UIWebViewController
+       
        
 
         
@@ -83,17 +79,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
             navigationController?.pushViewController(UiScrollview, animated: true)
         case "UIPickerView":
             navigationController?.pushViewController(UIPickerView, animated: true)
-        case "UIStepper" :
-            navigationController?.pushViewController(UIStepper, animated: true)
-        case "UIActivityIndicator" :
-            navigationController?.pushViewController(UIActivityIndicator, animated: true)
-        case "UISlider" :
-            navigationController?.pushViewController(UISlider, animated: true)
-        case "UIPageControl" :
-            navigationController?.pushViewController(UIPageControl, animated: true)
-        case "UIWebView" :
-            navigationController?.pushViewController(UIWebView, animated: true)
-        
+      
         default:
             print("hello")
         }

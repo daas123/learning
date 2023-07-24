@@ -20,11 +20,6 @@
 		924A5FF32A68FFCC0026FD07 /* learningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A5FF22A68FFCC0026FD07 /* learningUITestsLaunchTests.swift */; };
 		924A60002A69008D0026FD07 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A5FFF2A69008D0026FD07 /* TableViewCell.swift */; };
 		9290DCC02A6DA4D700D5B341 /* UIPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290DCBF2A6DA4D700D5B341 /* UIPickerViewController.swift */; };
-		92958E862A6E39180043EBA7 /* UIStepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E852A6E39180043EBA7 /* UIStepperViewController.swift */; };
-		92958E882A6E39350043EBA7 /* UIActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E872A6E39350043EBA7 /* UIActivityIndicatorViewController.swift */; };
-		92958E8A2A6E39470043EBA7 /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E892A6E39470043EBA7 /* UISliderViewController.swift */; };
-		92958E8C2A6E395B0043EBA7 /* UIPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E8B2A6E395B0043EBA7 /* UIPageControlViewController.swift */; };
-		92958E8E2A6E39760043EBA7 /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */; };
 		929889B12A6A818700AAC5ED /* DatepickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929889B02A6A818700AAC5ED /* DatepickerViewController.swift */; };
 		92989AB52A694EA800A250E8 /* UiimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92989AB42A694EA800A250E8 /* UiimageViewController.swift */; };
 		92A012CD2A6A48550055723B /* UIProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A012CC2A6A48550055723B /* UIProgressViewController.swift */; };
@@ -66,11 +61,6 @@
 		924A5FF22A68FFCC0026FD07 /* learningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		924A5FFF2A69008D0026FD07 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9290DCBF2A6DA4D700D5B341 /* UIPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewController.swift; sourceTree = "<group>"; };
-		92958E852A6E39180043EBA7 /* UIStepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperViewController.swift; sourceTree = "<group>"; };
-		92958E872A6E39350043EBA7 /* UIActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewController.swift; sourceTree = "<group>"; };
-		92958E892A6E39470043EBA7 /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
-		92958E8B2A6E395B0043EBA7 /* UIPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlViewController.swift; sourceTree = "<group>"; };
-		92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		929889B02A6A818700AAC5ED /* DatepickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatepickerViewController.swift; sourceTree = "<group>"; };
 		92989AB42A694EA800A250E8 /* UiimageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageViewController.swift; sourceTree = "<group>"; };
 		92A012CC2A6A48550055723B /* UIProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewController.swift; sourceTree = "<group>"; };
@@ -135,11 +125,6 @@
 				929889B02A6A818700AAC5ED /* DatepickerViewController.swift */,
 				92AFEF092A6AB02B00422FC7 /* UiScrollview.swift */,
 				9290DCBF2A6DA4D700D5B341 /* UIPickerViewController.swift */,
-				92958E852A6E39180043EBA7 /* UIStepperViewController.swift */,
-				92958E872A6E39350043EBA7 /* UIActivityIndicatorViewController.swift */,
-				92958E892A6E39470043EBA7 /* UISliderViewController.swift */,
-				92958E8B2A6E395B0043EBA7 /* UIPageControlViewController.swift */,
-				92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */,
 				924A5FD52A68FFC90026FD07 /* Main.storyboard */,
 				924A5FFF2A69008D0026FD07 /* TableViewCell.swift */,
 				924A5FD82A68FFCC0026FD07 /* Assets.xcassets */,
@@ -297,22 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92958E862A6E39180043EBA7 /* UIStepperViewController.swift in Sources */,
 				924A5FD42A68FFC90026FD07 /* ViewController.swift in Sources */,
 				9290DCC02A6DA4D700D5B341 /* UIPickerViewController.swift in Sources */,
 				920C2E7A2A6919B00007B1BC /* UiSegementViewController.swift in Sources */,
 				92989AB52A694EA800A250E8 /* UiimageViewController.swift in Sources */,
-				92958E8C2A6E395B0043EBA7 /* UIPageControlViewController.swift in Sources */,
-				92958E8A2A6E39470043EBA7 /* UISliderViewController.swift in Sources */,
 				92A012CD2A6A48550055723B /* UIProgressViewController.swift in Sources */,
 				920C2E7C2A6919CD0007B1BC /* UiswitchViewController.swift in Sources */,
 				92AFEF0A2A6AB02B00422FC7 /* UiScrollview.swift in Sources */,
-				92958E882A6E39350043EBA7 /* UIActivityIndicatorViewController.swift in Sources */,
 				924A60002A69008D0026FD07 /* TableViewCell.swift in Sources */,
 				924A5FD02A68FFC90026FD07 /* AppDelegate.swift in Sources */,
 				929889B12A6A818700AAC5ED /* DatepickerViewController.swift in Sources */,
 				924A5FD22A68FFC90026FD07 /* SceneDelegate.swift in Sources */,
-				92958E8E2A6E39760043EBA7 /* UIWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
