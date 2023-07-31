@@ -26,6 +26,7 @@
 		92958E8E2A6E39760043EBA7 /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */; };
 		929889B12A6A818700AAC5ED /* DatepickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929889B02A6A818700AAC5ED /* DatepickerViewController.swift */; };
 		92989AB52A694EA800A250E8 /* UiimageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92989AB42A694EA800A250E8 /* UiimageViewController.swift */; };
+		9299F36A2A723FCD0010E066 /* UistackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9299F3692A723FCD0010E066 /* UistackViewController.swift */; };
 		92A012CD2A6A48550055723B /* UIProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A012CC2A6A48550055723B /* UIProgressViewController.swift */; };
 		92AFEF0A2A6AB02B00422FC7 /* UiScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFEF092A6AB02B00422FC7 /* UiScrollview.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		929889B02A6A818700AAC5ED /* DatepickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatepickerViewController.swift; sourceTree = "<group>"; };
 		92989AB42A694EA800A250E8 /* UiimageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageViewController.swift; sourceTree = "<group>"; };
+		9299F3692A723FCD0010E066 /* UistackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UistackViewController.swift; sourceTree = "<group>"; };
 		92A012CC2A6A48550055723B /* UIProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewController.swift; sourceTree = "<group>"; };
 		92AFEF092A6AB02B00422FC7 /* UiScrollview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiScrollview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				92958E892A6E39470043EBA7 /* UISliderViewController.swift */,
 				92958E8B2A6E395B0043EBA7 /* UIPageControlViewController.swift */,
 				92958E8D2A6E39760043EBA7 /* UIWebViewController.swift */,
+				9299F3692A723FCD0010E066 /* UistackViewController.swift */,
 				924A5FD52A68FFC90026FD07 /* Main.storyboard */,
 				924A5FFF2A69008D0026FD07 /* TableViewCell.swift */,
 				924A5FD82A68FFCC0026FD07 /* Assets.xcassets */,
@@ -303,6 +306,7 @@
 				92958E8A2A6E39470043EBA7 /* UISliderViewController.swift in Sources */,
 				92A012CD2A6A48550055723B /* UIProgressViewController.swift in Sources */,
 				920C2E7C2A6919CD0007B1BC /* UiswitchViewController.swift in Sources */,
+				9299F36A2A723FCD0010E066 /* UistackViewController.swift in Sources */,
 				92AFEF0A2A6AB02B00422FC7 /* UiScrollview.swift in Sources */,
 				924A60002A69008D0026FD07 /* TableViewCell.swift in Sources */,
 				924A5FD02A68FFC90026FD07 /* AppDelegate.swift in Sources */,

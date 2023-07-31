@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         way(num: 9, name: "UISlider"),
         way(num: 10, name: "UIPageControl"),
         way(num: 11, name: "UIWebView"),
+        way(num: 12, name: "Uistackview"),
         
     ]
     
@@ -43,27 +44,27 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        var cnt =  detials[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        let cnt =  detials[indexPath.row]
         cell.gettingtopics.text = cnt.name
         cell.gettingNUmber.text = String(cnt.num)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var cnt =  detials[indexPath.row]
-        var Uiswitch = storyboard?.instantiateViewController(withIdentifier: "UiswitchViewController") as! UiswitchViewController
-        var UiSegment = storyboard?.instantiateViewController(withIdentifier: "UiSegementViewController") as! UiSegementViewController
-        var Uiimageview = storyboard?.instantiateViewController(withIdentifier: "UiimageViewController") as! UiimageViewController
-        var UIProgressView = storyboard?.instantiateViewController(withIdentifier: "UIProgressViewController") as! UIProgressViewController
-        var DatepickerViewController = storyboard?.instantiateViewController(withIdentifier: "DatepickerViewController") as! DatepickerViewController
-        var UiScrollview = storyboard?.instantiateViewController(withIdentifier: "UiScrollview") as! UiScrollview
-        var UIPickerView = storyboard?.instantiateViewController(withIdentifier: "UIPickerViewController") as! UIPickerViewController
-        var UIStepper = storyboard?.instantiateViewController(withIdentifier: "UIStepperViewController") as! UIStepperViewController
+        let cnt =  detials[indexPath.row]
+        let Uiswitch = storyboard?.instantiateViewController(withIdentifier: "UiswitchViewController") as! UiswitchViewController
+        let UiSegment = storyboard?.instantiateViewController(withIdentifier: "UiSegementViewController") as! UiSegementViewController
+        let Uiimageview = storyboard?.instantiateViewController(withIdentifier: "UiimageViewController") as! UiimageViewController
+        let UIProgressView = storyboard?.instantiateViewController(withIdentifier: "UIProgressViewController") as! UIProgressViewController
+        let DatepickerViewController = storyboard?.instantiateViewController(withIdentifier: "DatepickerViewController") as! DatepickerViewController
+        let UiScrollview = storyboard?.instantiateViewController(withIdentifier: "UiScrollview") as! UiScrollview
+        let UIPickerView = storyboard?.instantiateViewController(withIdentifier: "UIPickerViewController") as! UIPickerViewController
+        let UIStepper = storyboard?.instantiateViewController(withIdentifier: "UIStepperViewController") as! UIStepperViewController
        
-        var UISlider = storyboard?.instantiateViewController(withIdentifier: "UISliderViewController") as! UISliderViewController
-        var UIPageControl = storyboard?.instantiateViewController(withIdentifier: "UIPageControlViewController") as! UIPageControlViewController
-        var UIWebView = storyboard?.instantiateViewController(withIdentifier: "UIWebViewController" ) as! UIWebViewController
-       
+        let UISlider = storyboard?.instantiateViewController(withIdentifier: "UISliderViewController") as! UISliderViewController
+        let UIPageControl = storyboard?.instantiateViewController(withIdentifier: "UIPageControlViewController") as! UIPageControlViewController
+        let UIWebView = storyboard?.instantiateViewController(withIdentifier: "UIWebViewController" ) as! UIWebViewController
+        let Uistackview = storyboard?.instantiateViewController(withIdentifier: "UistackViewController" ) as! UistackViewController
 
         
         switch cnt.name
@@ -91,7 +92,8 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource
             navigationController?.pushViewController(UIPageControl, animated: true)
         case "UIWebView" :
             navigationController?.pushViewController(UIWebView, animated: true)
-        
+        case "Uistackview" :
+            navigationController?.pushViewController(Uistackview, animated: true)
         default:
             print("hello")
         }
